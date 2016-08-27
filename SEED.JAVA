@@ -6,11 +6,11 @@ public class seed {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int x,y;
+		int num,num1;
 		Scanner scan=new Scanner(System.in);
-		x=scan.nextInt();
-		y=scan.nextInt();
-		int n1=x;
+		num=scan.nextInt();
+		num1=scan.nextInt();
+		int n1=num;
 		int res=1;
 		while(n1!=0)
 		{
@@ -18,8 +18,8 @@ public class seed {
 			res=res*t;
 			n1=n1/10;
 		}
-		res=res*x;
-		if(res==y)
+		res=res*num;
+		if(res==num1)
 			System.out.println("seed");
 		else
 			System.out.println("no seed");
